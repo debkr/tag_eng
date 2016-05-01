@@ -11,12 +11,12 @@ Useful for highlighting top n words in a blog post (to create tags), or
 reviewing the relevance of articles, web pages, etc. to a particular topic.
 
 ###Some problems to be ironed out:
-* Program currently takes a text file with punctuation marks already stripped out, punctuation marks and other non-alpha characters currently returned as unique words;
+* Program currently takes a text file with punctuation marks already stripped out, punctuation marks and other non-alpha characters currently returned as parts of unique words which skews the results;
 * Words appearing both singular and plural currently returned as two unique words;
 * Need to add error handling on user input of n (order).
 
 ###Further improvements to be made:
-* User to specify whether Python/coding reserved words to be counted or excluded. Excluded words list for Python reserved words - when I tried (putting them in either single- or double-quotes) it returned a syntax error;
+* User to specify whether Python/coding reserved words to be counted or excluded. Excluded words list (commonly-used Python reserved words) is hard-coded but need to add executable code to allow for their exclusion;
 * Add ability to handle files with punctuation marks by stripping them out before splitting and counting words (at user request);
 * Add ability to handle plurals and singulars as one word  (at user request);
 * Add error-handling on user inpout of n (order);
